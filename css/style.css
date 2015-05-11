@@ -3,10 +3,14 @@ body {
 }
 
 .container {
-    margin-top: 240px;
+    margin-top: 5px;
 }
 
 p {
     font-family: 'Open Sans', sans-serif;
     color: #383838;
+}
+
+.quote {
+    font-size: 120%;
 }
