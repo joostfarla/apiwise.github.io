@@ -2,15 +2,15 @@
 layout: default
 ---
 
-<header class="header">
+<header class="site-header">
     <div class="container">
         <div class="row header-nav">
-            <div class="col-lg-6 col-md-6 col-sm-6">
-                <a href="/"><img class="logo" src="{{ "/images/apiwise.png" | prepend: site.baseurl }}" alt="Apiwise"></a>
+            <div class="logo col-lg-6 col-md-6 col-sm-6">
+                <a href="/"><img src="{{ "/images/apiwise.png" | prepend: site.baseurl }}" alt="Apiwise"></a>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-6">
-                <nav class="pull-right">
-                    <a href="#wie-zijn-wij">Wie zijn wij</a>
+            <div class="nav col-lg-6 col-md-6 col-sm-6">
+                <nav>
+                    <a href="#verhaal">Ons verhaal</a>
                     <a href="#diensten">Diensten</a>
                     <a href="#">Blog</a>
                     <a href="#contact">Contact</a>
@@ -23,46 +23,104 @@ layout: default
                 <p>Wij verzorgen het API design, community management, performance tests, functionele tests, monitoring, onderhoud en promotie van API's in de developer community.</p>
                 <a class="btn btn-primary" href="#diensten">Meer weten</a>
             </div>
-            <div class="col-lg-7 col-md-7 col-sm-7">
+            <div class="image col-lg-7 col-md-7 col-sm-7">
                 <img class="img-responsive" src="http://dummyimage.com/600x300/2C3539/fff.png" alt="">
             </div>
         </div>
     </div>
 </header>
 
-<section id="wie-zijn-wij" class="block">
+<section id="verhaal" class="block block-story">
     <div class="container">
         <div class="row block-header">
-            <h2 class="block-heading">Wie zijn wij</h2>
+            <h2 class="block-heading">Ons verhaal</h2>
         </div>
         <div class="row block-body">
-            <p>Apiwise helpt organisaties van A tot Z met het ontsluiten van Small, Big, Linked, Open en/of Closed data op een 'developer-friendly' wijze met behulp van state-of-the-art web API's.</p>
-            <p>Wij verzorgen het API design, community management, performance tests, functionele tests, monitoring, onderhoud en promotie van API's in de developer community.</p>
+            <div class="col-lg-4 col-md-4 col-sm-6 hidden-xs">
+                <img src="http://dummyimage.com/300x400/000/fff.png" alt="">
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-6 story">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum lobortis velit, at auctor lorem feugiat ut. Etiam luctus id turpis id euismod. Nullam hendrerit finibus pharetra. Aenean eget orci odio. Nam ac ipsum sit amet nibh rutrum rutrum a a ante. In feugiat mollis mauris sed blandit. Sed scelerisque tincidunt eros vel aliquet. Nulla et dolor eu nibh tempus auctor. Donec ipsum urna, venenatis non ipsum non, tempor pharetra neque. Praesent eget pretium est, quis scelerisque metus.</p>
+                <p>Maecenas ullamcorper elit eget tellus suscipit consequat. Proin vel sem id nisi pellentesque placerat. Sed ut condimentum nulla. Vestibulum turpis turpis, mollis a tempus et, aliquam et magna. Phasellus non consectetur magna. Aenean sed sapien porttitor, molestie quam in, tincidunt diam. Phasellus sit amet enim molestie, lacinia ipsum sit amet, aliquet tortor. Praesent consectetur justo et leo ullamcorper convallis at quis eros.</p>
+                <p>Quisque accumsan tellus tortor, vel varius risus vestibulum quis. Sed tincidunt velit in hendrerit auctor. Aliquam laoreet lectus sed ornare bibendum. Fusce consectetur justo quis erat pharetra, sit amet mattis nulla rutrum. Pellentesque nec tellus et eros auctor consectetur eu at nibh. Nam tristique, nisi finibus sagittis cursus, risus nisi posuere odio, eu porttitor libero libero congue neque. Ut mauris odio, consequat sed velit interdum, sodales dignissim arcu. Donec ornare auctor nisl, at viverra risus fringilla vel. Nam vel semper justo. In vel convallis ipsum. Etiam non laoreet nunc. Morbi nunc risus, fringilla quis laoreet ac, egestas in nisi.</p>
+            </div>
         </div>
     </div>
 </section>
 
-<section id="diensten" class="block">
+<section id="diensten" class="block block-services">
     <div class="container">
         <div class="row block-header">
             <h2 class="block-heading">Diensten</h2>
+            <span>Apiwise helpt organisaties van A tot Z bij het publiceren van data.</span>
         </div>
         <div class="row block-body">
-            <p>Goede API's versnellen distributie van data naar derde partijen en interne ontwikkelingen, waardoor er nieuwe business opportunities ontstaan en kosten, complexiteit en time to market lager worden.</p>
-            <p>Apiwise helpt organisaties van A tot Z met het ontsluiten van Small, Big, Linked, Open en/of Closed data op een 'developer-friendly' wijze met behulp van state-of-the-art web API's.</p>
-            <p>Wij verzorgen het API design, community management, performance tests, functionele tests, monitoring, onderhoud en promotie van API's in de developer community.</p>
-            <p>Heeft u interesse in onze diensten, beschikt u over data maar heeft u geen idee hoe u hier waarde uit kan halen, of heeft u gewoon zin om eens nader kennis te maken? Neem dan vrijblijvend contact op met Dimitri of Joost en we komen graag langs voor een kop koffie!</p>
+            <div class="service col-lg-4 col-md-4 col-sm-4">
+                <header class="header">
+                    <h3>API Consultancy</h3>
+                </header>
+                <div class="body">
+                    <p>Beschik je over data, maar heb je geen idee hoe je hier waarde uit kan halen? Heb je hulp nodig
+                        bij het ontwerpen van een robuuste API en alles wat daarbij komt kijken? Dan ben je bij Apiwise
+                        aan het juiste adres. Apiwise heeft jarenlange ervaring met het ontwikkelen en consumeren van API's
+                        en kan helpen bij het bepalen van uw data strategie en het opstellen van een adviesplan.</p>
+                    <a class="btn btn-primary btn-block" href="#">Meer weten</a>
+                </div>
+            </div>
+            <div class="service col-lg-4 col-md-4 col-sm-4">
+                <header class="header">
+                    <h3>API Management</h3>
+                </header>
+                <div class="body">
+                    <p>Heb je een API, maar mis je de juiste tools om de toegang tot de API te kunnen reguleren? Heb je
+                        geen inzicht in het gebruik van de API of problemen die de gebruikers ervaren? De API management
+                        producten en diensten van Apiwise bieden alle middelen om een hoogwaardige API aan te kunnen
+                        bieden en zelf voortdurend een vinger aan de pols te houden.</p>
+                    <a class="btn btn-primary btn-block" href="#">Meer weten</a>
+                </div>
+            </div>
+            <div class="service col-lg-4 col-md-4 col-sm-4">
+                <header class="header">
+                    <h3>API Development</h3>
+                </header>
+                <div class="body">
+                    <p>Heb je data, maar weet je niet waar je moet beginnen bij het bouwen van een API? Apiwise kan de
+                    ontwikkeling volledig uit handen nemen en een API realiseren waar ontwikkelaars van toepassingen
+                    direct mee uit de voeten kunnen. De API's die Apiwise ontwikkelt worden gerealiseerd middels bewezen
+                    technologie en voldoen aan alle moderne standaarden.</p>
+                    <a class="btn btn-primary btn-block" href="#">Meer weten</a>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
-<section id="contact" class="block">
+<section id="contact" class="block block-contact">
     <div class="container">
         <div class="row block-header">
             <h2 class="block-heading">Contact</h2>
+            <span>Neem vrijblijvend contact op om meer te weten te komen over onze diensten.</span>
         </div>
-        <div class="row block-body">
-            <p>Blijf op de hoogte en meld je nu aan voor de nieuwsbrief.</p>
+        <div class="row block-body" vocab="http://schema.org/" typeof="Organization">
+            <span property="name">Apiwise V.O.F.</span>
+            <div property="address" typeof="PostalAddress">
+                <span property="streetAddress">van Alkemadestraat 19</span><br>
+                <span property="postalCode">5014 MJ</span>
+                <span property="addressLocality">Tilburg, The Netherlands</span>
+            </div>
+            <br>
+            <a property="email" href="mailto:info@apiwise.nl">info@apiwise.nl</a><br>
+            <a property="telephone" href="tel:0031641011744">+31 6 41 01 17 44</a><br>
+            <br>
+            KVK: 62956787<br>
+            BTW: <span property="vatID">NL855028282B01</span><br>
+            <br><br>
+            <div class="social-links">
+                <a href="https://twitter.com/apiwise" rel="external" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/company/apiwise" rel="external" target="_blank"><i class="fa fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/apiwise" rel="external" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="https://github.com/apiwise" rel="external" target="_blank"><i class="fa fa-github"></i></a>
+            </div>
         </div>
     </div>
 </section>
