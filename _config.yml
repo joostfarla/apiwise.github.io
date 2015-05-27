@@ -1,8 +1,5 @@
 # Site settings
 title: Apiwise - Small, Big, Linked, Open en/of Closed data op een 'developer-friendly' wijze
-description: >
-  Apiwise helpt organisaties van A tot Z met het ontsluiten van Small, Big, Linked, Open en/of Closed data op een
-  'developer-friendly' wijze met behulp van state-of-the-art web API's.
 baseurl: ""
 url: "http://www.apiwise.nl"
 twitter_username: apiwise
