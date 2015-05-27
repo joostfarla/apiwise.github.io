@@ -185,6 +185,7 @@ h3 {
 
 .block-contact {
     text-align: center;
+    margin-bottom: 40px;
 
     .social-links {
         a {
@@ -202,12 +203,13 @@ h3 {
     color: #fff;
 
     > .container {
-        margin-top: 40px;
         padding: 25px 0 25px;
     }
 }
 
 .newsletter-signup {
+    padding: 20px;
+
     .response {
         margin-top: 15px;
     }

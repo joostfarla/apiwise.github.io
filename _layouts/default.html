@@ -27,14 +27,14 @@
             <div class="container">
                 <div class="row header-nav">
                     <div class="logo col-lg-6 col-md-6 col-sm-6">
-                        <a href="/"><img src="{{ "/images/apiwise.png" | prepend: site.baseurl }}" alt="Apiwise"></a>
+                        <a href="{{ "/" | prepend: site.baseurl }}"><img src="{{ "/images/apiwise.png" | prepend: site.baseurl }}" alt="Apiwise"></a>
                     </div>
                     <div class="nav col-lg-6 col-md-6 col-sm-6">
                         <nav>
-                            <a href="#verhaal">Ons verhaal</a>
-                            <a href="#diensten">Diensten</a>
+                            <a href="{% if page.url != "/index.html" %}{{ "/" | prepend: site.baseurl }}{% endif %}#verhaal">Ons verhaal</a>
+                            <a href="{% if page.url != "/index.html" %}{{ "/" | prepend: site.baseurl }}{% endif %}#diensten">Diensten</a>
                             <a href="#">Blog</a>
-                            <a href="#contact">Contact</a>
+                            <a href="{% if page.url != "/index.html" %}{{ "/" | prepend: site.baseurl }}{% endif %}#contact">Contact</a>
                         </nav>
                     </div>
                 </div>
