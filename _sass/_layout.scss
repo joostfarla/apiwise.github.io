@@ -5,6 +5,7 @@ body {
 
 p {
     line-height: 1.7;
+    margin-bottom: 20px;
 }
 
 .btn:hover {
@@ -57,4 +58,29 @@ p {
 
 .block-body {
     text-align: center;
+}
+
+.footer {
+    background-color: #2C3539;
+    padding: 25px 0 25px;
+    color: #fff;
+
+    .copyright {
+        text-align: center;
+        margin-top: 40px;
+    }
+}
+
+.newsletter-signup {
+    .response {
+        margin-top: 15px;
+    }
+
+    #mce-error-response {
+        color: $brand-danger;
+    }
+
+    #mce-success-response {
+        color: $brand-success;
+    }
 }
