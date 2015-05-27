@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <title>{{ site.title }}</title>
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700" type="text/css">
+        <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+        <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+        <link rel="shortcut icon" href="{{ "/favicon.ico" | prepend: site.baseurl }}" type="image/x-icon">
+        <link rel="icon" href="{{ "/favicon.ico" | prepend: site.baseurl }}" type="image/x-icon">
+    </head>
+    <body>
+        {{ content }}
+        <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="{{ "/js/init.js" | prepend: site.baseurl }}"></script>
+    </body>
+</html>
