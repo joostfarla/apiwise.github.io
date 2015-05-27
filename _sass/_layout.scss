@@ -1,10 +1,23 @@
+html,
 body {
+    height: 100%;
+}
+
+body {
+    display: table;
+    width: 100%;
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
 }
 
 p {
     line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 3.4em;
+    font-weight: 100;
     margin-bottom: 20px;
 }
 
@@ -24,9 +37,21 @@ h3 {
     @include transition(background-color 250ms ease);
 }
 
+.page-row {
+    display: table-row;
+    height: 1px;
+}
+
+.page-row-expanded {
+    height: 100%;
+}
+
 .site-header {
     background-color: #2C3539;
-    padding: 30px 0 50px;
+
+    > .container {
+        padding: 30px 0 25px;
+    }
 }
 
 .header-nav {
@@ -71,7 +96,8 @@ h3 {
 }
 
 .header-intro {
-    padding: 55px 0 20px;
+    padding: 35px 0 60px;
+    background-color: #2C3539;
 
     p {
         color: #fff;
@@ -173,9 +199,12 @@ h3 {
 
 .footer {
     background-color: #2C3539;
-    margin-top: 40px;
-    padding: 25px 0 25px;
     color: #fff;
+
+    > .container {
+        margin-top: 40px;
+        padding: 25px 0 25px;
+    }
 }
 
 .newsletter-signup {
