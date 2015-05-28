@@ -101,7 +101,7 @@ h3 {
 
     p {
         color: #fff;
-        font-size: 1.3em;
+        font-size: 1.4em;
         font-weight: 300;
         line-height: 1.5;
         margin-bottom: 25px;
@@ -120,11 +120,11 @@ h3 {
 
 .block {
     padding: 40px 0 30px;
+    text-align: center;
 }
 
 .block-header {
-    margin: 0 0 40px;
-    text-align: center;
+    margin: 0 0 25px;
 
     h2 {
         font-size: 3.4em;
@@ -137,13 +137,22 @@ h3 {
     }
 }
 
+.block-story {
+    .block-body {
+        font-size: 1.7em;
+        font-weight: 300;
+    }
+}
+
 @media (max-width: $screen-xs-max) {
     .block-story {
-        .story {
-            text-align: center;
+        .block-body {
+            padding: 20px;
+            font-size: 1.2em;
         }
     }
 }
+
 
 .block-services {
     .service {
@@ -184,16 +193,29 @@ h3 {
 }
 
 .block-contact {
-    text-align: center;
-    margin-bottom: 40px;
+    .block-body {
+        font-size: 1.7em;
+        font-weight: 300;
+    }
 
     .social-links {
+        margin: 40px 0;
+
         a {
             margin: 0 20px;
         }
 
         .fa {
-            font-size: 3.4em;
+            font-size: 2.8em;
+        }
+    }
+}
+
+@media (max-width: $screen-xs-max) {
+    .block-contact {
+        .block-body {
+            padding: 20px;
+            font-size: 1.2em;
         }
     }
 }
@@ -223,7 +245,6 @@ h3 {
     }
 }
 
-.copyright {
-    text-align: center;
-    margin-top: 40px;
+.address {
+    margin: 10px 0 20px;
 }
