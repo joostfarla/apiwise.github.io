@@ -31,9 +31,9 @@
                     </div>
                     <div class="nav col-lg-6 col-md-6 col-sm-6">
                         <nav>
-                            <a href="{% if page.url != "/index.html" %}{{ "/" | prepend: site.baseurl }}{% endif %}#missie">Missie</a>
+                            <a href="{% if page.url != "/index.html" %}{{ "/" | prepend: site.baseurl }}{% endif %}#visie">Visie</a>
                             <a href="{% if page.url != "/index.html" %}{{ "/" | prepend: site.baseurl }}{% endif %}#diensten">Diensten</a>
-                            <a href="#">Blog</a>
+                            <a href="http://blog.apiwise.nl/">Blog</a>
                             <a href="{% if page.url != "/index.html" %}{{ "/" | prepend: site.baseurl }}{% endif %}#contact">Contact</a>
                         </nav>
                     </div>
@@ -55,7 +55,7 @@
                         <div class="form-group col-lg-7 col-md-8 col-sm-8 col-lg-offset-1">
                             <div class="mc-field-group">
                                 <label class="sr-only" for="mce-EMAIL">E-mail adres</label>
-                                <input type="email" name="EMAIL" class="form-control" id="mce-EMAIL" placeholder="Voer uw e-mail adres in" required="">
+                                <input type="email" name="EMAIL" class="form-control" id="mce-EMAIL" placeholder="Voer je e-mailadres in" required="">
                             </div>
                             <div id="mce-responses" class="clearfix">
                                 <div class="response" id="mce-error-response" style="display:none"></div>
@@ -66,7 +66,16 @@
                         <div class="form-group col-lg-3 col-md-4 col-sm-4">
                             <input type="submit" value="Inschrijven" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary btn-block">
                         </div>
-                        <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+                        <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+                        <script type='text/javascript'>
+                            (function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';
+                                $.extend($.validator.messages, {
+                                    required: "Dit is een verplicht veld.",
+                                    email: "Vul hier een geldig e-mailadres in."
+                                })
+                            }
+                            (jQuery));var $mcj = jQuery.noConflict(true);
+                        </script>
                     </form>
                 </div>
                 <div class="row address">
