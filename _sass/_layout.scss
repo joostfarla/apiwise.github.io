@@ -153,6 +153,21 @@ h3 {
     }
 }
 
+.block-services {
+    .block-body {
+        font-size: 1.7em;
+        font-weight: 300;
+    }
+}
+
+@media (max-width: $screen-xs-max) {
+    .block-services {
+        .block-body {
+            padding: 20px;
+            font-size: 1.2em;
+        }
+    }
+}
 
 .block-services {
     .service {
