@@ -12,6 +12,38 @@
         <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
         <link rel="shortcut icon" href="{{ "/favicon.ico" | prepend: site.baseurl }}" type="image/x-icon">
         <link rel="icon" href="{{ "/favicon.ico" | prepend: site.baseurl }}" type="image/x-icon">
+        <script type="application/ld+json">
+            {
+              "@context": "http://schema.org",
+              "@type": "Website",
+              "publisher": "Apiwise",
+              "url": "http://www.apiwise.nl"
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+              "@context" : "http://schema.org",
+              "@type" : "Organization",
+              "name" : "Apiwise",
+              "description": "{{ page.description | strip_newlines }}",
+              "logo": "http://www.apiwise.nl/images/apiwise.png",
+              "url" : "http://www.apiwise.nl",
+              "email": "info@apiwise.nl",
+              "telephone": "+31641011744",
+              "vatID": "NL855028282B01",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Tilburg, The Netherlands",
+                "postalCode": "5014 MJ",
+                "streetAddress": "Van Alkemadestraat 19"
+              },
+              "sameAs" : [
+                "https://twitter.com/apiwise",
+                "https://www.linkedin.com/company/apiwise",
+                "https://www.facebook.com/apiwise"
+              ]
+            }
+        </script>
     </head>
     <body>
         <!-- Google Tag Manager -->
@@ -79,16 +111,12 @@
                     </form>
                 </div>
                 <div class="row address">
-                    <div class="col-lg-12 text-center" vocab="http://schema.org/" typeof="Organization">
-                        <span property="name">Apiwise V.O.F.</span> |
-                        <a property="email" href="mailto:info@apiwise.nl">info@apiwise.nl</a> |
-                        <span property="address" typeof="PostalAddress">
-                            <span property="streetAddress">Van Alkemadestraat 19</span>,
-                            <span property="postalCode">5014 MJ</span>
-                            <span property="addressLocality">Tilburg (NL)</span> |
-                        </span>
+                    <div class="col-lg-12 text-center">
+                        Apiwise V.O.F. |
+                        <a href="mailto:info@apiwise.nl">info@apiwise.nl</a> |
+                        Van Alkemadestraat 19, 5014 MJ Tilburg (NL) |
                         KVK: 62956787 |
-                        BTW: <span property="vatID">NL855028282B01</span>
+                        BTW: NL855028282B01
                     </div>
                 </div>
                 <div class="row footnote">
