@@ -60,6 +60,10 @@ h3 {
             float: right;
         }
 
+        a:first-child {
+            margin: 0 0 20px 0;
+        }
+
         a {
             color: #fff;
             font-weight: 300;
@@ -96,7 +100,7 @@ h3 {
 }
 
 .header-intro {
-    padding: 35px 0 60px;
+    padding: 35px 0 35px;
     background-color: #2C3539;
 
     p {
@@ -119,7 +123,7 @@ h3 {
 }
 
 .block {
-    padding: 40px 0 30px;
+    padding-top: 40px;
     text-align: center;
 }
 
@@ -137,7 +141,11 @@ h3 {
     }
 }
 
-.block-story {
+.block-vision {
+    p {
+        margin-bottom: 0;
+    }
+    
     .block-body {
         font-size: 1.7em;
         font-weight: 300;
@@ -145,7 +153,7 @@ h3 {
 }
 
 @media (max-width: $screen-xs-max) {
-    .block-story {
+    .block-vision {
         .block-body {
             padding: 20px;
             font-size: 1.2em;
