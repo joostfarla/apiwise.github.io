@@ -123,7 +123,7 @@ h3 {
 }
 
 .block {
-    padding-top: 40px;
+    padding: 20px 0 40px;
     text-align: center;
 }
 
@@ -142,10 +142,8 @@ h3 {
 }
 
 .block-vision {
-    p {
-        margin-bottom: 0;
-    }
-    
+    background-color: #f0f8ff;
+
     .block-body {
         font-size: 1.7em;
         font-weight: 300;
@@ -155,7 +153,6 @@ h3 {
 @media (max-width: $screen-xs-max) {
     .block-vision {
         .block-body {
-            padding: 20px;
             font-size: 1.2em;
         }
     }
@@ -198,9 +195,10 @@ h3 {
             padding: 35px 25px;
             border-radius: 0 0 5px 5px;
             background-color: #f0f8ff;
-            text-align: center;
+            text-align: left;
 
             p {
+                margin: 0;
                 line-height: 1.5;
             }
         }
